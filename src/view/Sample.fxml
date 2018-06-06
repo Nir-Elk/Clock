@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SampleController">
+   <bottom>
+      <Button fx:id="stop" mnemonicParsing="false" prefWidth="100.0" text="stop" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <Button mnemonicParsing="false" onAction="#start" prefWidth="100.0" text="start" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Canvas fx:id="analogclock" height="400.0" width="400.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Pane prefHeight="450.0" prefWidth="36.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text fx:id="digitalclock" layoutX="-4.0" layoutY="232.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </right>
+</BorderPane>
